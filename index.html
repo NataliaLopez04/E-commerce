@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/5087/5087847.png"
+      type="image/x-icon"
+    />
+    <title>e-commerce</title>
+  </head>
+  <body>
+    <div class="background" id="background-home">
+      <header>
+        <div class="logo">
+          <a href="#background-home">
+            <img
+              class="img-logo"
+              src="./assets/Gris Moderno Tecnología y Videojuegos Logo para Videojuegos.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="box">
+          <div class="container-1">
+            <span class="material-symbols-outlined"> search </span>
+            <input
+              name="search-articles"
+              type="search"
+              id="search"
+              placeholder="Search..."
+              list="list-articles"
+            />
+          </div>
+          <datalist id="list-articles">
+            <option value="Iphone 12 pro"></option>
+            <option value="MacBook Pro"></option>
+            <option value="MacBook Air"></option>
+            <option value="Iwatch Series 4"></option>
+          </datalist>
+        </div>
+        <nav class="nav-bar">
+          <a href="#background-home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#offers">Offers</a>
+          <a href="#">Contact</a>
+          <a href="#">Account</a>
+          <div class="alert-notification">
+            <img
+              class="notification-btn"
+              src="./assets/carrito.png"
+              alt="Cart shopping"
+            />
+            <p class="notification">0</p>
+          </div>
+        </nav>
+      </header>
+      <section class="container-home">
+        <div class="tittle-home">
+          <h1 id="home">Technology store</h1>
+          <h3>Find all apple products in our store</h3>
+          <a href="#products"><h2>Explore now ➮</h2></a>
+        </div>
+        <div class="img-home">
+          <img src="./assets/img-ppal.png" alt="Image  e-commerce" />
+        </div>
+      </section>
+    </div>
+    <!-- Inicio ventana Modal -->
+    <!-- <section id="modal"> -->
+    <div id="container-modal">
+      <div id="modal-content">
+        <div class="container-modal-product">
+          <img id="close-img" src="./assets/close.png" alt="close" />
+          <h2>shopping cart</h2>
+        </div>
+        <p class="message">"Your cart is empty"</p>
+        <div class="list-total">
+          <button id="content-details">pagar</button>
+          <!-- <img class="delete" src="./assets/delete.png" alt="" />
+          <input type="text" id="list" value="0" />
+          <img class="add" src="./assets/add.png" alt="" /> -->
+          <button class="delete-all">Empty everything</button>
+        </div>
+      </div>
+    </div>
+    <!-- </section> -->
+    <!-- fin ventana Modal -->
+    <aside>
+      <div class="tittle-section">
+        <h1 id="products">Products</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="container-card">
+        <section class="products">
+          <article class="card">
+            <div class="img-card">
+              <img
+                src="./assets/macBook.producto3.jpeg"
+                alt="imagen producto computador macBook Air"
+              />
+            </div>
+            <div class="text-card">
+              <div class="tittle-card">
+                <h3>MacBook Air 2022</h3>
+                <img class="img-ok" src="./assets/ok.png" alt="" />
+              </div>
+              <div class="p-card">
+                <p>
+                  Pantalla de 13,3 pulgadas (diagonal) retroiluminada por LED
+                  con tecnología IPS; resolución nativa de 2560 x 1600 a 227
+                  pixeles por pulgada compatible con millones de colores.
+                  <br />CPU de 8 núcleos con 4 núcleos de rendimiento y 4 de
+                  eficiencia.
+                </p>
+              </div>
+              <div class="container-price">
+                <div class="price">
+                  <p class="price-full">$5.399.000</p>
+                  <p class="price-final">$5.090.000</p>
+                </div>
+                <div class="cart-shop">
+                  <button class="add-cart" onclick="add(`producto-1`,5090000)">
+                    <img
+                      class="img-cart"
+                      src="./assets/carrito de compras.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <!-- <div>
+                  <p class="p">0</p>
+                </div>
+                <div class="list-total">
+                  <img class="delete" src="./assets/delete.png" alt="" />
+                  <input type="range" id="list" value="0" min="0" max="10" />
+                  <img class="add" src="./assets/add.png" alt="" />
+                </div> -->
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="products">
+          <article class="card">
+            <div class="img-card">
+              <img
+                src="./assets/Iwatch.producto4.jpeg"
+                alt="imagen producto computador macBook Air"
+              />
+            </div>
+            <div class="text-card">
+              <div class="tittle-card">
+                <h3>Apple Watch Series 7</h3>
+                <img class="img-ok" src="./assets/ok.png" alt="" />
+              </div>
+              <div class="p-card">
+                <p>
+                  Apple Watch Series 7 (GPS) - Caja de aluminio en verde de 41
+                  mm - Correa deportiva verde trébol - Talla única
+                  <br />*Incluye dos correas de diferente color no
+                  seleccionable.
+                </p>
+              </div>
+              <div class="container-price">
+                <div class="price">
+                  <p class="price-full">$2.500.000</p>
+                  <p class="price-final">$1.950.000</p>
+                </div>
+                <div class="cart-shop">
+                  <button class="add-cart" onclick="add(`producto-2`,1950000)">
+                    <img
+                      class="img-cart"
+                      src="./assets/carrito de compras.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <!-- <div>
+                  <p class="p">0</p>
+                </div>
+                <div class="list-total">
+                  <img class="add" src="./assets/add.png" alt="" />
+                  <input id="list" type="range" value="0" min="0" max="10" />
+                  <img class="delete" src="./assets/delete.png" alt="" />
+                </div> -->
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="products">
+          <article class="card">
+            <div class="img-card">
+              <img
+                src="./assets/macBookPro.producto4.jpeg"
+                alt="imagen producto computador macBook Air"
+              />
+            </div>
+            <div class="text-card">
+              <div class="tittle-card">
+                <h3>MacBook Pro de 13 pulgadas</h3>
+                <img
+                  class="img-ok"
+                  src="./assets/outline_task_alt_black_36dp.png"
+                  alt=""
+                />
+              </div>
+              <div class="p-card">
+                <p>
+                  Gracias al nuevo chip M2, el MacBook Pro de 13 pulgadas es más
+                  poderoso que nunca. Ofrece hasta 20 horas de batería y un
+                  sistema de enfriamiento activo que mantiene un rendimiento
+                  increíble en el mismo diseño compacto de siempre. Con su
+                  espectacular pantalla Retina, cámara FaceTime HD y micrófonos
+                  con calidad de estudio, es nuestro laptop pro más portátil.
+                </p>
+              </div>
+              <div class="container-price">
+                <div class="price">
+                  <p class="price-full">$6.999.000</p>
+                  <p class="price-final">$6.330.000</p>
+                </div>
+                <div class="cart-shop">
+                  <button class="add-cart" onclick="add(`producto-3`,6330000)">
+                    <img
+                      class="img-cart"
+                      src="./assets/carrito de compras.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <!-- <div>
+                  <p class="p">0</p>
+                </div>
+                <div class="list-total">
+                  <img class="add" src="./assets/add.png" alt="" />
+                  <input id="list" type="range" value="0" min="0" max="10" />
+                  <img class="delete" src="./assets/delete.png" alt="" />
+                </div> -->
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <div class="tittle-section">
+        <h1 id="offers">Offers</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="container-card">
+        <section class="products">
+          <article class="card">
+            <div class="img-card">
+              <img
+                src="./assets/macBook.producto3.jpeg"
+                alt="imagen producto computador macBook Air"
+              />
+            </div>
+            <div class="text-card">
+              <div class="tittle-card">
+                <h3>MacBook Air 2022</h3>
+                <img
+                  class="img-ok"
+                  src="./assets/outline_task_alt_black_36dp.png"
+                  alt=""
+                />
+              </div>
+              <div class="p-card">
+                <p>
+                  Pantalla de 13,3 pulgadas (diagonal) retroiluminada por LED
+                  con tecnología IPS; resolución nativa de 2560 x 1600 a 227
+                  pixeles por pulgada compatible con millones de colores.
+                  <br />CPU de 8 núcleos con 4 núcleos de rendimiento y 4 de
+                  eficiencia.
+                </p>
+              </div>
+              <div class="container-price">
+                <div class="price">
+                  <p class="price-full">$5.399.000</p>
+                  <p class="price-final">$5.090.000</p>
+                </div>
+                <div class="cart-shop">
+                  <button class="add-cart" onclick="add(`producto-4`,5090000)">
+                    <img
+                      class="img-cart"
+                      src="./assets/carrito de compras.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <!-- <div>
+                  <p class="p">0</p>
+                </div>
+                <div class="list-total">
+                  <img class="add" src="./assets/add.png" alt="" />
+                  <input id="list" type="range" value="0" min="0" max="10" />
+                  <img class="delete" src="./assets/delete.png" alt="" />
+                </div> -->
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="products">
+          <article class="card">
+            <div class="img-card">
+              <img
+                src="./assets/Iwatch.producto4.jpeg"
+                alt="imagen producto computador macBook Air"
+              />
+            </div>
+            <div class="text-card">
+              <div class="tittle-card">
+                <h3>Apple Watch Series 7</h3>
+                <img
+                  class="img-ok"
+                  src="./assets/outline_task_alt_black_36dp.png"
+                  alt=""
+                />
+              </div>
+              <div class="p-card">
+                <p>
+                  Apple Watch Series 7 (GPS) - Caja de aluminio en verde de 41
+                  mm - Correa deportiva verde trébol - Talla única
+                  <br />*Incluye dos correas de diferente color no
+                  seleccionable.
+                </p>
+              </div>
+              <div class="container-price">
+                <div class="price">
+                  <p class="price-full">$2.500.000</p>
+                  <p class="price-final">$1.950.000</p>
+                </div>
+                <div class="cart-shop">
+                  <button class="add-cart" onclick="add(`producto-5`,1950000)">
+                    <img
+                      class="img-cart"
+                      src="./assets/carrito de compras.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <!-- <div>
+                  <p class="p">0</p>
+                </div>
+                <div class="list-total">
+                  <img class="add" src="./assets/add.png" alt="" />
+                  <input id="list" type="range" value="0" min="0" max="10" />
+                  <img class="delete" src="./assets/delete.png" alt="" />
+                </div> -->
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="products">
+          <article class="card">
+            <div class="img-card">
+              <img
+                src="./assets/macBookPro.producto4.jpeg"
+                alt="imagen producto computador macBook Air"
+              />
+            </div>
+            <div class="text-card">
+              <div class="tittle-card">
+                <h3>MacBook Pro de 13 pulgadas</h3>
+                <img
+                  class="img-ok"
+                  src="./assets/outline_task_alt_black_36dp.png"
+                  alt=""
+                />
+              </div>
+              <div class="p-card">
+                <p>
+                  Gracias al nuevo chip M2, el MacBook Pro de 13 pulgadas es más
+                  poderoso que nunca. Ofrece hasta 20 horas de batería y un
+                  sistema de enfriamiento activo que mantiene un rendimiento
+                  increíble en el mismo diseño compacto de siempre. Con su
+                  espectacular pantalla Retina, cámara FaceTime HD y micrófonos
+                  con calidad de estudio, es nuestro laptop pro más portátil.
+                </p>
+              </div>
+              <div class="container-price">
+                <div class="price">
+                  <p class="price-full">$6.999.000</p>
+                  <p class="price-final">$6.330.000</p>
+                </div>
+                <div class="cart-shop">
+                  <button class="add-cart" onclick="add(`producto-5`,6330000)">
+                    <img
+                      class="img-cart"
+                      src="./assets/carrito de compras.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <!-- <div>
+                  <p class="p">0</p>
+                </div>
+                <div class="list-total">
+                  <img class="add" src="./assets/add.png" alt="" />
+                  <input id="list" type="range" value="0" min="0" max="10" />
+                  <img class="delete" src="./assets/delete.png" alt="" />
+                </div> -->
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </aside>
+    <!-- <div class="tittle-section">
+      <h1 id="products">shopping Cart</h1>
+      <div class="underline"></div>
+    </div>
+    <div class="container-card">
+      <div class="sub-container-cart">
+        <div class="underline"></div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">N°</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th>a</th>
+              <th>ca</th>
+              <th>234</th>
+            </tr>
+          </tbody>
+          <tbody id="items"></tbody>
+        </table>
+
+        <div class="list-total">
+          <img class="delete" src="./assets/delete.png" alt="" />
+          <input type="text" id="list" value="0" min="0" max="10" />
+          <img class="add" src="./assets/add.png" alt="" />
+        </div>
+        <button class="delete-all">Empty everything</button>
+      </div>
+    </div> -->
+    <footer>
+      <ul>
+        <h2>About iShop</h2>
+        <li>Recycle with iShop</li>
+        <li>Technical service</li>
+        <li>Corporate Sales</li>
+        <li>Stores</li>
+        <li>iShop Benefits</li>
+        <li>About us</li>
+        <li>Frequent questions</li>
+        <li>security protocol</li>
+      </ul>
+      <ul>
+        <h2>Payment methods</h2>
+        <li>
+          <img
+            class="img-payment-methods"
+            src="./assets/logo-visa-mastercard.png"
+            alt=""
+          />
+        </li>
+      </ul>
+      <ul>
+        <h2>follow us</h2>
+        <li>
+          <img
+            class="img-social-media"
+            src="./assets/Facebook_Logo_(2019).png"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="img-social-media"
+            src="./assets/Instagram_logo_2016.svg.webp"
+            alt=""
+          />
+        </li>
+        <li></li>
+      </ul>
+      <p>© 2022 ¡hey tech! Colombia. All rights reserved a Natalia A. López</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
